@@ -1,7 +1,7 @@
 # 8-Point Pipelined Radix-2 DIT FFT Hardware Accelerator
 
 ![FFT Architecture Placeholder](docs/Schematic.jpeg)
-*(Replace with a block diagram of your 3-stage SDF pipeline)*
+
 
 ## Overview
 This repository contains a synthesizable, high-performance 8-point Fast Fourier Transform (FFT) hardware accelerator written in Verilog. It implements a **Radix-2 Decimation-in-Time (DIT)** algorithm using a **Single Delay Feedback (SDF)** pipeline architecture. 
@@ -24,7 +24,7 @@ Designed for real-time Digital Signal Processing (DSP) applications, this core f
 Verified using Icarus Verilog (`iverilog`). The testbench feeds an impulse signal and checks against the mathematical expected DC frequency bins, accurately modeling fixed-point quantization noise.
 
 ![Simulation Waveform Placeholder](docs/Waveform.jpeg)
-*(Replace with a screenshot of your GTKWave or Vivado simulation showing the sequential valid outputs)*
+
 
 <!-- ## ASIC Synthesis & Physical Design (Cadence)
 This design was synthesized using **Cadence Genus** and taken through physical implementation using **Cadence Innovus**.
@@ -49,7 +49,7 @@ iverilog -o mydesign tb_fft_8point.v fft_8point.v fft_stage3.v fft_stage2.v fft_
 
 # Run the simulation
 vvp .\mydesign
-
+```
 ---
 
 # Author
