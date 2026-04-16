@@ -54,7 +54,7 @@ vvp .\mydesign
 
 # Author
 
-**Naren**
+**Narendiran**
 ECE Student
 Interest Areas:
 
