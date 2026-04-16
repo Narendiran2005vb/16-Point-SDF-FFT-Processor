@@ -1,7 +1,6 @@
 # 8-Point Pipelined Radix-2 DIT FFT Hardware Accelerator
 
 ![FFT Architecture Placeholder](docs/Schematic.jpeg)
-*(Replace with a block diagram of your 3-stage SDF pipeline)*
 
 ## Overview
 This repository contains a synthesizable, high-performance 8-point Fast Fourier Transform (FFT) hardware accelerator written in Verilog. It implements a **Radix-2 Decimation-in-Time (DIT)** algorithm using a **Single Delay Feedback (SDF)** pipeline architecture. 
@@ -24,23 +23,20 @@ Designed for real-time Digital Signal Processing (DSP) applications, this core f
 Verified using Icarus Verilog (`iverilog`). The testbench feeds an impulse signal and checks against the mathematical expected DC frequency bins, accurately modeling fixed-point quantization noise.
 
 ![Simulation Waveform Placeholder](docs/Waveform.jpeg)
-*(Replace with a screenshot of your GTKWave or Vivado simulation showing the sequential valid outputs)*
 
-<!-- ## ASIC Synthesis & Physical Design (Cadence)
+## ASIC Synthesis & Physical Design (Cadence)
 This design was synthesized using **Cadence Genus** and taken through physical implementation using **Cadence Innovus**.
 
 ### Logical Synthesis Results (Genus)
-* **Technology Node:** [e.g., TSMC 45nm / ASAP7]
-* **Target Clock Frequency:** [e.g., 500 MHz]
-* **Total Cell Area:** [Insert Area] $\mu m^2$
-* **Total Power:** [Insert Power] mW
+* **Technology Node:** [45nm]
+* **Target Clock Frequency:** [10 MHz]
+* **Total Cell Area:** [13873.572] $\mu m^2$
+* **Total Power:** [205012.224] nW
 
 ### Physical Design (Innovus)
-![Innovus Layout Placeholder](docs/images/innovus_layout.png)
-*(Replace with a screenshot of your routed design from Innovus)*
-* **Core Utilization:** [e.g., 70%]
-* **Setup/Hold Slack:** [Insert Slack] ns
-* **Critical Path:** [Briefly describe the critical path, e.g., Stage 3 Complex Multiplier] -->
+* **Core Utilization:** [65.207%]
+* **Setup/Hold Slack:** [1.033/0.009] ns
+<!-- * **Critical Path:** [Briefly describe the critical path, e.g., Stage 3 Complex Multiplier] -->
 
 ## How to Run the RTL Simulation
 ```bash

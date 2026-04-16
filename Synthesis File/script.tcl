@@ -10,7 +10,7 @@ elaborate fft_16point
 current_design fft_16point
 
 set_attribute dont_use true [find /lib* -libcell SDFF*] 
-define_clock -period 10000 -name clk [get_ports clk]
+define_clock -period 10000000 -name clk [get_ports clk]
 external_delay -input 0 -clock clk [all_inputs] 
 external_delay -output 0 -clock clk [all_outputs]
 
