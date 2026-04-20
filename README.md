@@ -34,6 +34,7 @@ This design was synthesized using **Cadence Genus** and taken through physical i
 * **Total Power:** [205012.224] nW
 
 ### Physical Design (Innovus)
+![Innovus Layout Placeholder](docs/innovus_layout.png)
 * **Core Utilization:** [65.207%]
 * **Setup/Hold Slack:** [1.033/0.009] ns
 <!-- * **Critical Path:** [Briefly describe the critical path, e.g., Stage 3 Complex Multiplier] -->
